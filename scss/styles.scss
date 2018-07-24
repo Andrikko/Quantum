@@ -1,0 +1,123 @@
+@import "_reset.scss";
+
+$language_btn_color: #a09595;
+$back_color: #bb8f72;
+$nav_li_hover: #b9b9b9;
+$color_nav: #a09595;
+
+$open_sans: 'Open Sans',
+sans-serif;
+$playfair: 'PlayfairDisplaySC-Bold',
+serif;
+$mariad_pro: 'Mariad Pro',
+sans-serif;
+body {
+    background-color: #ffffff;
+}
+
+.wrap {
+    width: 91%;
+    margin: auto;
+}
+
+header {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header_left,
+.header_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 43%;
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+    .tel_logo {
+        background-color: $back_color;
+        padding: 7px;
+        border-radius: 15px;
+    }
+    span {
+        font-family: $open_sans;
+        font-size: 16px;
+        color: $language_btn_color;
+        padding: 0px 10px;
+    }
+}
+
+.nav_left {
+    float: right;
+}
+
+.nav_left,
+.nav_right {
+    width: 70%;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: $playfair;
+        font-size: 19px;
+        li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.nav_link{
+    padding: 15px 0px;
+    text-decoration: none;
+    color: black;
+}
+.nav_link, 
+.nav_link::after, 
+.nav_link::before{
+    transition: all .5s
+}
+.nav_link:hover{
+    color: $color_nav;
+}
+  
+.nav_link{
+    position: relative;
+}
+.nav_link::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: $nav_li_hover;
+    height: 1px;
+}
+.nav_link:hover::after{
+    width: 60%;
+}
+
+.logo {
+    margin-bottom: -33px;
+}
+
+.lang_btn {
+    color: $language_btn_color;
+    font-family: $mariad_pro;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.lang_btn:active {
+    background-color: $back_color;
+    border-radius: 15px;
+    color: white;
+}
