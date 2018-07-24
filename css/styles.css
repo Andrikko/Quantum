@@ -57,8 +57,9 @@ body {
 }
 
 .wrap {
-  width: 91%;
+  width: 90%;
   margin: auto;
+  min-width: 1020px;
 }
 
 header {
@@ -168,6 +169,99 @@ header {
   background-color: #bb8f72;
   border-radius: 15px;
   color: white;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  background: url("../images/Quantum_backt.png") no-repeat;
+  background-position-y: 15vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 610px;
+}
+
+.info_content {
+  margin-left: 65px;
+}
+
+#date {
+  font-size: 26px;
+  font-family: "PlayfairDisplaySC-Bold", serif;
+  color: #a09595;
+}
+#date sup {
+  font-size: 12px;
+}
+
+.text {
+  margin: 30px 0px 30px 30px;
+}
+.text h1 {
+  font-family: "PlayfairDisplaySC-Bold", serif;
+  font-size: 42px;
+}
+.text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 35px 0px;
+  position: relative;
+}
+
+.info_btn {
+  padding: 7px 20px;
+  border: 1.5px solid #bb8f72;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #bb8f72;
+}
+
+.view {
+  margin-top: 90px;
+  height: 600px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: url("../images/Residential building_night-min.png") no-repeat;
+  background-size: contain;
+}
+.view .social_links {
+  margin-top: 65px;
+  display: flex;
+  align-items: center;
+}
+.view .social_links a {
+  padding: 5px 10px;
+}
+.view .social_links a:hover {
+  opacity: 0.5;
+}
+.view .call {
+  margin-right: -45px;
+  margin-bottom: -30px;
+  border: 1px solid #bb8f72;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+footer {
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+footer p {
+  float: left;
+}
+footer .company {
+  float: right;
 }
 
 /*# sourceMappingURL=styles.css.map */
