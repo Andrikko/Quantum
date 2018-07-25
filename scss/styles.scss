@@ -38,24 +38,18 @@ sans-serif;
         transform: translateX(0);
     }
 }
-
-body {
-    background-color: #ffffff;
-}
-
+body {background-color: #ffffff;}
 .wrap {
     width: 90%;
     margin: auto;
     min-width: 1020px;
 }
-
 header {
     height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-
 .header_left,
 .header_right {
     display: flex;
@@ -63,7 +57,6 @@ header {
     align-items: center;
     width: 43%;
 }
-
 .tel {
     display: flex;
     align-items: center;
@@ -79,11 +72,7 @@ header {
         padding: 0px 10px;
     }
 }
-
-.nav_left {
-    float: right;
-}
-
+.nav_left {float: right;}
 .nav_left,
 .nav_right {
     width: 70%;
@@ -111,13 +100,8 @@ header {
 .nav_link::before{
     transition: all .5s
 }
-.nav_link:hover{
-    color: $color_nav;
-}
-  
-.nav_link{
-    position: relative;
-}
+.nav_link:hover{color: $color_nav;}
+.nav_link{position: relative;}
 .nav_link::after{
     position: absolute;
     bottom: 0;
@@ -130,14 +114,8 @@ header {
     background: $nav_li_hover;
     height: 1px;
 }
-.nav_link:hover::after{
-    width: 60%;
-}
-
-.logo {
-    margin-bottom: -33px;
-}
-
+.nav_link:hover::after{width: 60%;}
+.logo {margin-bottom: -33px;}
 .lang_btn {
     color: $language_btn_color;
     font-family: $mariad_pro;
@@ -164,16 +142,12 @@ main{
     align-items: flex-start;
     height: 610px;
 }
-.info_content{
-    margin-left: 25px;;
-}
+.info_content{margin-left: 25px;}
 #date{
     font-size: 26px;
     font-family: $playfair;
     color: $color_nav;
-    sup{
-        font-size: 12px;
-    }
+    sup{font-size: 12px;}
 }
 .text{
     margin: 30px 0px 30px 30px;
@@ -212,15 +186,10 @@ main{
     background: url("../images/Residential building_night-min.png") no-repeat;
     background-size: contain;
     .social_links{
-        margin-top: 65px;
         display: flex;
         align-items: center;
-        a{
-            padding: 5px 10px;
-        }
-        a:hover{
-            opacity: 0.5;
-        }
+        a{padding: 5px 10px;}
+        a:hover{opacity: 0.5;}
     }
     .call{
         margin-right: -45px;
@@ -243,13 +212,12 @@ footer{
     font-family: $open_sans;
     font-size: 12px;
     color: whitesmoke;
-    p{
-        float: left;
-    }
+    p{float: left;}
     .company{
         float: right;
         display: flex;
         align-items: center;
+        img{padding-left: 5px;}
     }
 }
 .wrap_footer{

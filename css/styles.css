@@ -18,35 +18,22 @@ summary, time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer,
 header, hgroup, menu, nav, section {
   display: block;
 }
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
 blockquote:before, blockquote:after {
   content: '';
   content: none;
 }
-
 q:before, q:after {
   content: '';
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -78,23 +65,18 @@ table {
     transform: translateX(0);
   }
 }
-body {
-  background-color: #ffffff;
-}
-
+body {background-color: #ffffff;}
 .wrap {
   width: 90%;
   margin: auto;
   min-width: 1020px;
 }
-
 header {
   height: 85px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-
 .header_left,
 .header_right {
   display: flex;
@@ -102,7 +84,6 @@ header {
   align-items: center;
   width: 43%;
 }
-
 .tel {
   display: flex;
   align-items: center;
@@ -118,11 +99,7 @@ header {
   color: #a09595;
   padding: 0px 10px;
 }
-
-.nav_left {
-  float: right;
-}
-
+.nav_left {float: right;}
 .nav_left,
 .nav_right {
   width: 70%;
@@ -142,27 +119,20 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .nav_link {
   padding: 15px 0px;
   text-decoration: none;
   color: black;
 }
-
 .nav_link,
 .nav_link::after,
 .nav_link::before {
   transition: all 0.5s;
 }
-
-.nav_link:hover {
-  color: #a09595;
-}
-
+.nav_link:hover {color: #a09595;}
 .nav_link {
   position: relative;
 }
-
 .nav_link::after {
   position: absolute;
   bottom: 0;
@@ -175,28 +145,19 @@ header {
   background: #b9b9b9;
   height: 1px;
 }
-
-.nav_link:hover::after {
-  width: 60%;
-}
-
-.logo {
-  margin-bottom: -33px;
-}
-
+.nav_link:hover::after {width: 60%;}
+.logo {margin-bottom: -33px;}
 .lang_btn {
   color: #a09595;
   font-family: "Mariad Pro", sans-serif;
   text-decoration: none;
   padding: 7px;
 }
-
 .lang_btn:active {
   background-color: #bb8f72;
   border-radius: 15px;
   color: white;
 }
-
 main {
   display: flex;
   justify-content: space-around;
@@ -204,7 +165,6 @@ main {
   background-position-y: 15vh;
   margin-bottom: 100px;
 }
-
 .info {
   display: flex;
   flex-direction: column;
@@ -212,23 +172,14 @@ main {
   align-items: flex-start;
   height: 610px;
 }
-
-.info_content {
-  margin-left: 25px;
-}
-
+.info_content {margin-left: 25px;}
 #date {
   font-size: 26px;
   font-family: "PlayfairDisplaySC-Bold", serif;
   color: #a09595;
 }
-#date sup {
-  font-size: 12px;
-}
-
-.text {
-  margin: 30px 0px 30px 30px;
-}
+#date sup {font-size: 12px;}
+.text {margin: 30px 0px 30px 30px;}
 .text h1 {
   font-family: "PlayfairDisplaySC-Bold", serif;
   font-size: 42px;
@@ -240,7 +191,6 @@ main {
   position: relative;
   line-height: 20px;
 }
-
 .info_btn {
   padding: 7px 20px;
   border: 1.5px solid #bb8f72;
@@ -249,12 +199,10 @@ main {
   font-size: 14px;
   color: #bb8f72;
 }
-
 .info_btn:hover {
   cursor: pointer;
   font-weight: bolder;
 }
-
 #view {
   margin-top: 90px;
   height: 600px;
@@ -267,16 +215,11 @@ main {
   background-size: contain;
 }
 #view .social_links {
-  margin-top: 65px;
   display: flex;
   align-items: center;
 }
-#view .social_links a {
-  padding: 5px 10px;
-}
-#view .social_links a:hover {
-  opacity: 0.5;
-}
+#view .social_links a {padding: 5px 10px;}
+#view .social_links a:hover {opacity: 0.5;}
 #view .call {
   margin-right: -45px;
   margin-bottom: -30px;
@@ -291,7 +234,6 @@ main {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-
 footer {
   background-color: black;
   height: fit-content;
@@ -299,20 +241,17 @@ footer {
   font-size: 12px;
   color: whitesmoke;
 }
-footer p {
-  float: left;
-}
+footer p {float: left;}
 footer .company {
   float: right;
   display: flex;
   align-items: center;
 }
-
+footer .company img {padding-left: 5px;}
 .wrap_footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 7px 0px;
 }
-
 /*# sourceMappingURL=styles.css.map */

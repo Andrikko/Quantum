@@ -3,17 +3,14 @@ window.onload = function () {
         {
             text: 'КОМФОРТ ТА СУЧАСНІ <br>ТЕХНОЛОГІЇ',
             image: "url('./images/Residential building_night-min.png') no-repeat"
-            // image: "url('./images/Residential building_night-min.png')"
         },
         {
             text: 'ІДЕАЛЬНЕ МІСЦЕ <br>ДЛЯ ЖИТТЯ',
             image: "url('./images/render2.png') no-repeat"
-            // image: "url('./images/render2.png')"
         },
         {
             text: 'ДЛЯ ТИХ ХТО ЦІНУЄ <br>ВИСОКІ СТАНДАРТИ',
             image: "url('./images/render3.png') no-repeat"
-            // image: "url('./images/render3.png')"
         }
     ];
 
@@ -28,6 +25,7 @@ window.onload = function () {
 
         $('#view').fadeOut(700, function(){
             $(this).css("background", images[j].image).fadeIn(700);
+            $(this).css("background-size", "contain");
             j++;
             j == 3 ? j = 0 : ' ';
         });
