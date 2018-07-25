@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <title>Quantum</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Mariad Pro';
@@ -17,7 +21,6 @@
             font-family: PlayfairDisplaySC-Bold;
             src: url("./fonts/PlayfairDisplaySC-Bold.ttf");
         }
-
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
         @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:700');
     </style>
@@ -72,7 +75,7 @@
                 <div class="info_content">
                     <p id="date">01<sup>/04</sup></p>
                     <div class="text">
-                        <h1>КОМФОРТ ТА СУЧАСНІ<br>ТЕХНОЛОГІЇ</h1>
+                        <h1 id='title'>КОМФОРТ ТА СУЧАСНІ <br>ТЕХНОЛОГІЇ</h1>
                         <p>Будівля відповідає категорії «комфорт» — 
                             технології <br>енергозбереження широко застосовуються
                             в ході <br>будівництва, гарантують мінімальну вартість
@@ -82,19 +85,19 @@
                     <button class="info_btn">Переглянути об'єкти</button>
                 </div>
             </div>
-            <div class="view">
+            <div id="view">
                 <div class="social_links">
                     <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
                     <a href="#"><img src="./images/insta.png" alt="instagram"></a>
                     <a href="#"><img src="./images/youtube.png" alt="youtube"></a>
                 </div>
                 <!-- <img class='view_img' src="./images/Residential building_night-min.png" alt="content_image"> -->
-                <img class="call" src="./images/tel.png" alt="tel_logo">
+                <img class="call swing" src="./images/tel.png" alt="tel_logo">
             </div>
         </main>
     </div>
     <footer>
-        <div class="wrap">
+        <div class="wrap wrap_footer">
             <p>Quantum 2018. Всі права захищено.</p>
             <div class="company">
                 <span>Сайт розроблено </span>

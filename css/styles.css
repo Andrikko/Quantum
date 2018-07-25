@@ -52,6 +52,32 @@ table {
   border-spacing: 0;
 }
 
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 body {
   background-color: #ffffff;
 }
@@ -176,6 +202,7 @@ main {
   justify-content: space-around;
   background: url("../images/Quantum_backt.png") no-repeat;
   background-position-y: 15vh;
+  margin-bottom: 100px;
 }
 
 .info {
@@ -187,7 +214,7 @@ main {
 }
 
 .info_content {
-  margin-left: 65px;
+  margin-left: 25px;
 }
 
 #date {
@@ -211,6 +238,7 @@ main {
   font-size: 16px;
   padding: 35px 0px;
   position: relative;
+  line-height: 20px;
 }
 
 .info_btn {
@@ -222,7 +250,12 @@ main {
   color: #bb8f72;
 }
 
-.view {
+.info_btn:hover {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+#view {
   margin-top: 90px;
   height: 600px;
   width: 50%;
@@ -233,35 +266,53 @@ main {
   background: url("../images/Residential building_night-min.png") no-repeat;
   background-size: contain;
 }
-.view .social_links {
+#view .social_links {
   margin-top: 65px;
   display: flex;
   align-items: center;
 }
-.view .social_links a {
+#view .social_links a {
   padding: 5px 10px;
 }
-.view .social_links a:hover {
+#view .social_links a:hover {
   opacity: 0.5;
 }
-.view .call {
+#view .call {
   margin-right: -45px;
   margin-bottom: -30px;
   border: 1px solid #bb8f72;
   padding: 10px;
   border-radius: 25px;
 }
+#view .swing:hover {
+  cursor: pointer;
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
 
 footer {
   background-color: black;
+  height: fit-content;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
+  color: whitesmoke;
 }
 footer p {
   float: left;
 }
 footer .company {
   float: right;
+  display: flex;
+  align-items: center;
+}
+
+.wrap_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */
